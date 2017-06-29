@@ -15,7 +15,7 @@ var express = require("express"),
     middleware = require("./middlware"),
     AboutMovies = require("./models/aboutMovies");
 
-var dbURL = process.env.DATABASEURL;
+var dbURL = "mongodb://admin:FunAdmin95@ds143362.mlab.com:43362/moviemania";
 mongoose.connect(dbURL);
 
 app.set("view engine", "ejs");
