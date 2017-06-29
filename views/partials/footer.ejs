@@ -1,0 +1,24 @@
+        <div class="footer">
+            <br>
+            &copy Movie Mania - 2017
+        </div>
+        <script type="text/javascript">
+            $(".watchedBtn").click(function () {
+                $("#unwatched").removeClass("focusedRow");
+                $("#unwatched").addClass("unfocusedRow");
+                $("#watched").removeClass("unfocusedRow");
+                $("#watched").addClass("focusedRow");
+                $(".watchedBtn").attr("id", "activatedDisplayBtn");
+                $(".unwatchedBtn").attr("id", "");
+            });
+            $(".unwatchedBtn").click(function () {
+                $("#watched").removeClass("focusedRow");
+                $("#watched").addClass("unfocusedRow");
+                $("#unwatched").removeClass("unfocusedRow");
+                $("#unwatched").addClass("focusedRow");
+                $(".unwatchedBtn").attr("id", "activatedDisplayBtn");
+                $(".watchedBtn").attr("id", "");
+            });
+        </script>
+    </body>
+</html>

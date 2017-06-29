@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="container">
+    <form action="/users/signup" method="POST">
+        <div class="form-group">
+            <label>
+                UserName
+                <input class="form-control" type="text" placeholder="UserName" name="username" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                Password
+                <input class="form-control" type="password" placeholder="Password" name="password" id="password" required>
+            </label>
+        </div>
+        <!--<div class="form-group">-->
+        <!--    <label>-->
+        <!--        Confirm Password-->
+        <!--        <input class="form-control" type="password" placeholder="Confirm Password" id="confirmPassword" required>-->
+        <!--    </label>-->
+        <!--</div>-->
+        <input type="submit" value="Sign Up" class="btn btn-default btn-md">
+    </form>
+    <br>
+    Already have an account? <a href="/users/login">Login</a>
+</div>
+
+<% include partials/footer %>

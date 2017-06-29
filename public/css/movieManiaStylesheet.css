@@ -1,0 +1,155 @@
+body {
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    background: #283048; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283048, #859398); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283048, #859398); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.jumbotron h2 {
+    font-size: 40px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+/*.homeSecondNav a{*/
+    
+/*}*/
+
+.homeSecondNav {
+    /*height: 40px;*/
+    background: rgba(0, 0, 0, 0);
+    height: 40px;
+    /*border-bottom: 3px solid rgb(238, 238, 238);*/
+    margin-bottom: 20px;
+}
+
+.homeSecondNav button {
+    padding-right: 10px;
+    outline: none;
+    bordeR: none;
+    font-size: 20px;
+    float: left;
+    height: 100%;
+    /*border-radius: 5px;*/
+    background: none;
+    color: white;
+}
+
+#activatedDisplayBtn {
+    /*background: rgb(238, 238, 238);*/
+    /*color: white;*/
+    border-bottom: 3px solid white;
+}
+
+input[type=checkbox].checkboxCustom {
+    margin-left: 55px;
+}
+
+.not-authorized {
+    display: none;
+}
+
+.singleContainer {
+    width: 60%;
+}
+
+.notWatched {
+    color: red;
+}
+
+.watched {
+    color: green;
+}
+
+.btn-container form{
+    display: inline;
+}
+
+.btn-container {
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    padding: 1px 0 10px 0;
+    border: 0;
+    background: rgba(95, 106, 119, 0.0);
+    color: white;
+}
+
+.nolink {
+    color: white;
+}
+
+.nolink:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.focusedRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.unfocusedRow {
+    display: none;
+}
+
+.aboutHeader {
+    text-align: center;
+}
+
+.aboutHeader h1 {
+    font-size: 3em;
+}
+
+/*.aboutText {*/
+    /*background: red;*/
+    /*font-family: "Indie Flower", cursive;*/
+/*}*/
+
+.aboutImgDiv {
+    height: 455px;
+    /*background-image: url("http://www.fatmovieguy.com/wp-content/uploads/2014/06/The-Judge-Movie-Poster.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 50%;*/
+    /*background-size: contain;*/
+}
+
+.navbarCustom {
+    background: rgb(70, 69, 70);
+    color: white;
+}
+
+.navbarCustom li a {
+    color: white;
+}
+
+.navbarCustom .navbar-header .navbar-brand{
+    color: white;
+}
+
+.customJumbotron {
+    background: rgb(59, 68, 89);
+    color: white;
+}
+
+.thumbnail .caption {
+    color: white;
+}
+
+label {
+    width: 22%;
+}
+
+.footer {
+    height: 80px;
+}

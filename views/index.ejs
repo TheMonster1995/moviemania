@@ -1,0 +1,73 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="jumbotron customJumbotron">
+        <h2>The Movie-Mania App</h2>
+        <p>Kepp track of your movies!</p>
+        <a class="btn btn-lg btn-info" href="/movies/new">Add One</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="homeSecondNav">
+        <button class="watchedBtn" id="activatedDisplayBtn">Watched</button>
+        <button class="unwatchedBtn">To Watch</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row focusedRow displays" id="watched">
+        <% movies.forEach(function (movie) { if (movie.watched) { %>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <h1><a href="/movies/<%= movie._id %>" class="nolink"><%= movie.title %></a></h1>
+                    <img src="<%= movie.imgURL %>">
+                    <div class="caption">
+                        <p><%= movie.description %></p>
+                    </div>
+                    <a class="btn btn-md btn-success" href="/movies/<%= movie._id %>">Read More ...</a>
+                    <br>
+                </div>
+            </div>
+        <% };}); %>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="thumbnail">
+                <h1>Add a Movie</h1>
+                <img src="http://www.frankmio.com/testsiteM/images/moviemania_1.jpg">
+                <div class="caption">
+                    <p>Add a Movie to your collection NOW!</p>
+                </div>
+                <a class="btn btn-md btn-success" href="/movies/new">Add one</a>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="row unfocusedRow displays" id="unwatched">
+        <% movies.forEach(function (movie) {if (!movie.watched) { %>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <h1><a href="/movies/<%= movie._id %>" class="nolink"><%= movie.title %></a></h1>
+                    <img src="<%= movie.imgURL %>">
+                    <div class="caption">
+                        <p><%= movie.description %></p>
+                    </div>
+                    <a class="btn btn-md btn-success" href="/movies/<%= movie._id %>">Read More ...</a>
+                    <br>
+                </div>
+            </div>
+        <% };}); %>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="thumbnail">
+                <h1>Add a Movie</h1>
+                <img src="http://www.frankmio.com/testsiteM/images/moviemania_1.jpg">
+                <div class="caption">
+                    <p>Add a Movie to your collection NOW!</p>
+                </div>
+                <a class="btn btn-md btn-success" href="/movies/new">Add one</a>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>
