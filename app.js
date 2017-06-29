@@ -44,6 +44,26 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.get("/", middleware.notLoggedIn, function (req, res) {
+    AboutMovies.create({
+        movies:[
+            "http://www.fatmovieguy.com/wp-content/uploads/2014/06/The-Judge-Movie-Poster.jpg",
+            "https://s-media-cache-ak0.pinimg.com/736x/da/3b/be/da3bbe3597cdc8b787b8a2577ecfc3cf.jpg",
+            "https://s-media-cache-ak0.pinimg.com/736x/c1/ab/78/c1ab782b93344350aa968604dbfdc9d8--fun-recipes-jodie-foster.jpg",
+            "https://assets.mubi.com/images/notebook/post_images/22621/images-w1400.jpg?1481167057",
+            "https://s-media-cache-ak0.pinimg.com/736x/06/cb/33/06cb338efcf3ac37a90caad05fd356a2--saving-private-ryan-matt-damon.jpg",
+            "https://s-media-cache-ak0.pinimg.com/736x/36/fe/2c/36fe2cd41adb3eac8eeed2c678a97d9c.jpg",
+            "http://www.topdesignmag.com/wp-content/uploads/2011/04/lord-war-creative-movie-posters.jpg",
+            "http://www.posterposter.org/wp-content/uploads/2016/09/3-arrival-movie-poster-embarrassing-photoshop-fail.jpg",
+            "http://cdn.collider.com/wp-content/uploads/Inception-movie-poster-7.jpg"
+        ]
+    }, function (err, result) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("DONE!!!!!!!!!!!!!!!!!!");
+            console.log(result);
+        }
+    });
     res.render("landing");
 })
 
