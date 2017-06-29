@@ -130,7 +130,12 @@ input[type=checkbox].checkboxCustom {
 }
 
 .navbarCustom li a {
+    color: rgb(193, 189, 189);
+}
+
+.navbarCustom li a:hover {
     color: white;
+    background: rgb(70, 69, 70);
 }
 
 .navbarCustom .navbar-header .navbar-brand{
